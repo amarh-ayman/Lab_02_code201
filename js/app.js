@@ -1,6 +1,6 @@
 'use strict';
 alert("HOW AM I ?")
-alert("MY name is Amarh abusohyon, i am a Biomedical Informatics Engineer, I am 24 years old \n right now i am taking a courses in software development, and i really love programming.")
+alert("MY name is Amarh abusohyon, i am a Biomedical Informatics Engineer, I am 24 years old \n right now i am taking a courses in software development, and i really love programming.\n and my favourite color is blue")
 
 function wrongAnswer(answer, string) {
     while (!(answer === 'Y') && !(answer === 'N') && !(answer === 'YES') && !(answer === 'NO')) {
@@ -52,3 +52,6 @@ let ask05 = prompt(ask05_Q).toUpperCase()
 wrongAnswer(ask05, ask05_Q)
 console.log(ask05)
 document.getElementById("q5").innerText = ask05
+    //////////////////////////////////////////////////////////////
+
+alert(ask01_Q + "NO \n" + ask02_Q + "NO\n" + ask03_Q + "YES \n" + ask04_Q + "NO \n" + ask05_Q + "YES")
