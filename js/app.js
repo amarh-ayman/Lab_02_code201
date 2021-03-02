@@ -1,5 +1,7 @@
 'use strict';
-alert("HOW AM I ?")
+let user = prompt("PLEASE give me your name ..")
+
+alert("Hi " + user + " HOW ARE U?!🤔 \n i will tell u WHO AM I \n GIVE ME few minutes of you time 🥰")
 alert("MY name is Amarh abusohyon, i am a Biomedical Informatics Engineer, I am 24 years old \n right now i am taking a courses in software development, and i really love programming.\n and my favourite color is blue")
 
 function wrongAnswer(answer, string) {
@@ -55,3 +57,5 @@ document.getElementById("q5").innerText = ask05
     //////////////////////////////////////////////////////////////
 
 alert(ask01_Q + "NO \n" + ask02_Q + "NO\n" + ask03_Q + "YES \n" + ask04_Q + "NO \n" + ask05_Q + "YES")
+
+alert("ohhh😍 thank you " + user + " for your time")
