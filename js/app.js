@@ -5,7 +5,7 @@ alert("MY name is Amarh abusohyon, i am a Biomedical Informatics Engineer, I am 
 function wrongAnswer(answer, string) {
     while (!(answer === 'Y') && !(answer === 'N') && !(answer === 'YES') && !(answer === 'NO')) {
         alert("PLEASE, answer with y/n , yes/no ")
-        answer = prompt(string)
+        answer = prompt(string).toUpperCase()
 
         //console.log(!(answer === 'Y'))
     }
