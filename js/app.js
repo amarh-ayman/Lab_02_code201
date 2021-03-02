@@ -1,6 +1,7 @@
 'use strict';
 let user = prompt("PLEASE give me your name ..")
 
+
 alert("Hi " + user + " HOW ARE U?!🤔 \n i will tell u WHO AM I \n GIVE ME few minutes of you time 🥰")
 alert("MY name is Amarh abusohyon, i am a Biomedical Informatics Engineer, I am 24 years old \n right now i am taking a courses in software development, and i really love programming.\n and my favourite color is blue")
 
@@ -56,6 +57,104 @@ console.log(ask05)
 document.getElementById("q5").innerText = ask05
     //////////////////////////////////////////////////////////////
 
-alert(ask01_Q + "NO \n" + ask02_Q + "NO\n" + ask03_Q + "YES \n" + ask04_Q + "NO \n" + ask05_Q + "YES")
+
+
+////////////////////////////////////////////////////////////////
+
+let ask06_Q = "what is my month birth ? "
+let ask06 = prompt("MMMM..  Guessing TIME \n what is my month birth ? use number's \n HINT: you have 4 oppprtunities\n ")
+let counter01 = 1
+
+
+while (counter01 < 5 && ask06 != '1') {
+
+    switch (ask06) {
+
+        case '2':
+            alert("TOO HIGH");
+            break;
+        case '3':
+            alert("almost there ");
+            break;
+        case '4':
+            alert("increase your effort");
+            break;
+        case '5':
+            alert("low");
+            break;
+        case '6':
+            alert("TOO low");
+            break;
+        case '7':
+            alert("TOO low");
+            break;
+        case '8':
+            alert("TOO low");
+            break;
+        case '9':
+            alert("TOO low");
+            break;
+        case '10':
+            alert("almost there ,but in oppesite ");
+            break;
+        case '11':
+            alert("almost there");
+            break;
+        case '12':
+            alert("TOO HIGH");
+            break;
+        default:
+            break;
+    }
+
+    if (counter01 < 4) {
+        alert("u have left  " + (4 - counter01) + "  oppertunities")
+        ask06 = prompt("what is my month birth ? ")
+    } else
+        alert("SORRY!!!")
+    counter01 += 1
+}
+console.log(counter01)
+
+if (ask06 === '1') alert("CORRECT , BRAVIOOO")
+document.getElementById("q6").innerText = ask06
+    //////////////////////////////////////////////////////////////
+
+let ask07_Q = "my favourite FOOd"
+let ask07 = prompt("Guess my favourite FOOd \n Hint :you have 6 oppprtunities ")
+let food = ['pasta', 'indomi', 'maftool', 'kabsa']
+let counter02 = 1
+let userfood = [6]
+
+document.getElementById("answer7").innerText = food
+    //console.log(food)
+while (counter02 <= 6 && !food.includes(ask07)) {
+
+
+    if (counter02 < 6) {
+        alert("u have left  " + (6 - counter02) + "  oppertunities")
+        ask07 = prompt("Guess my favourite FOOd ")
+    } else
+        alert("SORRY!!!")
+    counter02 += 1
+    userfood.push(ask07)
+}
+if (food.includes(ask07)) alert("CORRECT , BRAVIOOO")
+document.getElementById("q7").innerText = userfood
+    //console.log(userfood)
+    //////////////////////////////////////////////////
+
+
+let score = 0
+
+if (ask01 === 'N' || ask01 === 'NO') score++;
+if (ask02 === 'N' || ask02 === 'NO') score++;
+if (ask03 === 'Y' || ask03 === 'YES') score++;
+if (ask04 === 'N' || ask04 === 'NO') score++;
+if (ask05 === 'Y' || ask05 === 'YES') score++;
+if (ask06 === '1') score++;
+if (food.includes(ask07)) score++;
+
+alert("HMMM .. " + user + "  your score in the question's is =  " + score + "\nTHE ANSWER'S :\n" + ask01_Q + "NO \n" + ask02_Q + "NO\n" + ask03_Q + "YES \n" + ask04_Q + "NO \n" + ask05_Q + "YES \n" + ask06_Q + " 1 \n" + ask07_Q + " :  " + food.join(','))
 
 alert("ohhh😍 thank you " + user + " for your time")

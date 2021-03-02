@@ -2,7 +2,7 @@ th,
 td {
     border: 5px solid black;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
 }
 
@@ -28,4 +28,12 @@ p {
     text-align: center;
     font-size: 50px;
     margin: 10px 10px 10px 10px;
+}
+
+li {
+    font-size: 20px;
+}
+
+h3 {
+    color: brown;
 }
