@@ -181,6 +181,6 @@ if (ask05 === 'Y' || ask05 === 'YES') score++;
 if (ask06 === '1') score++;
 if (food.includes(ask07)) score++;
 
-alert("HMMM .. " + user + "  your score in the question's is =  " + score + " out of 6 \nTHE ANSWER'S :\n" + ask01_Q + "NO \n" + ask02_Q + "NO\n" + ask03_Q + "YES \n" + ask04_Q + "NO \n" + ask05_Q + "YES \n" + ask06_Q + " 1 \n" + ask07_Q + " :  " + food.join(','))
+alert("HMMM .. " + user + "  your score in the question's is =  " + score + " out of 6 \nTHE ANSWER'S :\n" + ask01_Q + "NO \n" + ask02_Q + "NO\n" + ask03_Q + "YES \n" + ask04_Q + "NO \n" + ask05_Q + "YES \n" + ask06_Q + " 1 \n" + ask07_Q + " :  " + food)
 
 alert("ohhh😍 thank you " + user + " for your time")
