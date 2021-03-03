@@ -1,4 +1,5 @@
 'use strict';
+
 let user = prompt("PLEASE give me your name ..")
 
 
@@ -128,6 +129,7 @@ let userfood = [6]
 
 document.getElementById("answer7").innerText = food
     //console.log(food)
+    /*
 while (counter02 <= 6 && !food.includes(ask07)) {
 
 
@@ -141,8 +143,32 @@ while (counter02 <= 6 && !food.includes(ask07)) {
 }
 if (food.includes(ask07)) alert("CORRECT , BRAVIOOO")
 document.getElementById("q7").innerText = userfood
-    //console.log(userfood)
-    //////////////////////////////////////////////////
+    //console.log(userfood)*/
+
+let correctguess = 0;
+while (counter02 <= 6) {
+    for (var i = 0; i < food.length; i++) {
+        if (food[i] === ask07) {
+            alert("CORRECT , BRAVIOOO")
+            correctguess++;
+            break;
+
+        }
+    }
+    if (correctguess == 1) break;
+
+    userfood.push(ask07)
+    if (counter02 < 6) {
+        alert("u have left  " + (6 - counter02) + "  oppertunities")
+        ask07 = prompt("Guess my favourite FOOd ")
+    } else alert("SORRY!!!")
+
+    counter02++;
+
+}
+document.getElementById("q7").innerText = userfood
+
+//////////////////////////////////////////////////
 
 
 let score = 0
