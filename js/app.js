@@ -61,7 +61,7 @@ document.getElementById("q5").innerText = ask05
 
 
 ////////////////////////////////////////////////////////////////
-
+function birthday(){
 let ask06_Q = "what is my month birth ? "
 let ask06 = prompt("MMMM..  Guessing TIME \n what is my month birth ? use number's \n HINT: you have 4 oppprtunities\n ")
 let counter01 = 1
@@ -119,8 +119,12 @@ console.log(counter01)
 
 if (ask06 === '1') alert("CORRECT , BRAVIOOO")
 document.getElementById("q6").innerText = ask06
-    //////////////////////////////////////////////////////////////
+}
 
+birthday();
+
+//////////////////////////////////////////////////////////////
+function favFood(){
 let ask07_Q = "my favourite FOOd"
 let ask07 = prompt("Guess my favourite FOOd \n Hint :you have 6 oppprtunities ")
 let food = ['pasta', 'indomi', 'maftool', 'kabsa']
@@ -128,22 +132,7 @@ let counter02 = 1
 let userfood = [6]
 
 document.getElementById("answer7").innerText = food
-    //console.log(food)
-    /*
-while (counter02 <= 6 && !food.includes(ask07)) {
 
-
-    if (counter02 < 6) {
-        alert("u have left  " + (6 - counter02) + "  oppertunities")
-        ask07 = prompt("Guess my favourite FOOd ")
-    } else
-        alert("SORRY!!!")
-    counter02 += 1
-    userfood.push(ask07)
-}
-if (food.includes(ask07)) alert("CORRECT , BRAVIOOO")
-document.getElementById("q7").innerText = userfood
-    //console.log(userfood)*/
 
 let correctguess = 0;
 while (counter02 <= 6) {
@@ -167,6 +156,8 @@ while (counter02 <= 6) {
 
 }
 document.getElementById("q7").innerText = userfood
+}
+favFood();
 
 //////////////////////////////////////////////////
 
