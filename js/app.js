@@ -28,7 +28,7 @@ function trialQuestions(trial, Question, userAnswer, trueanswer, numberofQuestio
             }
             //////////////////////for the question 7
         if (numberofQuestion === 7)
-            for (var i = 0; i < userAnswer.length; i++) {
+            for (var i = 0; i < trueanswer.length; i++) {
                 if (trueanswer[i] === userAnswer) {
                     alert("CORRECT , BRAVIOOO")
                     return ++score;
@@ -53,7 +53,6 @@ function trialQuestions(trial, Question, userAnswer, trueanswer, numberofQuestio
 ////////////////////////////////////////////////////
 let user = prompt("PLEASE give me your name ..")
 while (!user) user = prompt("PLEASE give me your name ..")
-
 alert("Hi " + user + " HOW ARE U?!🤔 \n i will tell u WHO AM I \n GIVE ME few minutes of you time 🥰")
 alert("MY name is Amarh abusohyon, i am a Biomedical Informatics Engineer, I am 24 years old \n right now i am taking a courses in software development, and i really love programming.\n and my favourite color is blue")
     /////////////////////////////////////////////////////
